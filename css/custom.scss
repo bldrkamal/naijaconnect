@@ -1,0 +1,40 @@
+$body-bg: rgba(25, 27, 25, 0.904);
+$primary: rgb(0, 128, 43);
+$body-color: white;
+$font-family-sans-serif: 'poppins', sans-serif;
+$carousel-control-transition:        opacity .15s ease;
+$carousel-indicator-width:           15px;
+$carousel-indicator-height:          3px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+@media (min-width : 992px) {
+    .offcanvas {
+      visibility      : visible;
+      position        : relative;
+      background      : none;
+      border          : none;
+      justify-content : end;
+      color           : red;
+    }
+  }
+  
+  @media (max-width : 992px) {
+    .offcanvas {
+      width : 250px !important;
+    }
+    .offcanvas-start-lg {
+      top          : 0;
+      left         : 0;
+      border-right : 1px solid rgba(0, 0, 0, .2);
+      transform    : translateX(-100%);
+    }
+  }
+  
+  .navbar-nav li a {
+    color: white !important;
+  }
